@@ -1,0 +1,37 @@
+0 = Random
+1 = GIGN / Leet
+2 = SAS / Arctic
+3 = Lisa / Mila
+4 = [lisa01] Lisa (LE) / Yuri
+5 = Choi Ji Yoon / Mao
+6 = Lincoln / Karachenko
+7 = Michael / [mila01] Mila (LE)
+8 = Kwan / [leet01] Leet (old)
+9 = Mari / Ara
+10 = 707 / Natalie
+11 = [choi01] Choi Ji Yoon (LE) / [yuri01] Yuri (LE)
+12 = Emma / Hasan
+13 = Carrie / Tammy
+14 = [mari01] Marie (LE) / Viper
+15 = Heather / [natary01] Natalie (LE)
+16 = [sas01] SAS / Sonya
+17 = [lisa02swim] Lisa (SWIM) / [mila02swim] Mila (SWIM) 
+18 = Miyu / Phoenix
+19 = GSG9 / Athena
+20 = [lisa03xmas] Lisa (XMAS) / [mila03xmas] Mila (XMAS)
+21 = Helga / [white] Naomi
+22 = [sas02] SAS / [arctic01] Arctic
+23 = Kenji / Joe
+24 = [emma02swim] Emma (SWIM) / [tammy02swim] Tammy (SWIM)
+25 = [carrie01] Carrie (LE) / [viper01] Viper (LE)
+26 = [miu01] Miyu (LE) / [athena01] Athena (LE)
+27 = [choi02] Choi (S-PUNK) / [yuri02] Yuri (S-PUNK)
+28 = [helga01xmas] Helga (XMAS) / [white01xmas] Naomi (XMAS)
+
+# The following are only available through https://cso2.wohlnet.ru/
+29 = Kim (SA2) / Miya (SA2)
+30 = Geni (SA2) / Leona (SA2)
+31 = Scarlett (SA2) / Viper (SA2)
+32 = Niki (SA2) / Yasmin (SA2)
+33 = [ct_choi/ct_chc1] Choi Ji Yoon (Color) / [tr_yuri/tr_yuri_color01] Yuri (Color)
+34 = [ct_mari/ct_mac1] Marie (Color) / [tr_tammy/tr_tamc1] Tammy (Color)
