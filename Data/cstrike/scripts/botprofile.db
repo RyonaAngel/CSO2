@@ -1,0 +1,3074 @@
+//
+//ALL UPDATES ARE MADE BY ORGANNER
+//FOR THE GLOBAL SERVER: http://discord.gg/NXYypCQ
+//
+//
+//----------------------------------------------------------------------------
+// BotProfile.db
+// Author: Michael S. Booth, Turtle Rock Studios (www.turtlerockstudios.com)
+//
+// This database defines bot "personalities".
+// Feel free to edit it and define your own bots.
+// 
+// 17.08.14 �Ϻ� �߰�
+//----------------------------------------------------------------------------
+
+//
+// All profiles begin with this data and overwrite their own
+//
+Default
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.3
+	AttackDelay = 0
+	Teamwork = 75
+	WeaponPreference = none
+	Cost = 0
+	Difficulty = NORMAL
+	VoicePitch = 100
+	Skin = 0
+	ErrorRangeY = 0
+	UseNewAimSystem = 0
+    BotAimRangeX = 0.01
+    BotAimRangeZ = 0.01
+End
+
+//----------------------------------------------------------------------------
+
+//
+// These templates inherit from Default and override with their values
+// The name of the template defines a type that is used by individual bot profiles
+//
+
+// weapon preference templates
+Template Defa
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = akm
+	WeaponPreference = mk18
+End
+
+Template DefaX
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = famas
+	WeaponPreference = galil
+End
+
+Template Rifle
+	WeaponPreference = acr
+	WeaponPreference = ak12
+	WeaponPreference = scarl
+	WeaponPreference = aek971
+	WeaponPreference = mk18
+	WeaponPreference = akm
+	WeaponPreference = m16a2
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = g36k
+End
+
+Template RifleT
+	WeaponPreference = ak12
+	WeaponPreference = acr
+	WeaponPreference = aek971
+	WeaponPreference = scarl
+	WeaponPreference = akm
+	WeaponPreference = mk18
+	WeaponPreference = m16a2
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = galil
+	WeaponPreference = famas
+	WeaponPreference = g36k
+End
+
+Template Punch
+	WeaponPreferenceBestCount = 6
+	WeaponPreference = beowulf
+	WeaponPreference = scarh
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = krisssuperv
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = fal
+	WeaponPreference = hk416c
+End
+
+Template PunchT
+	WeaponPreferenceBestCount = 6
+	WeaponPreference = beowulf
+	WeaponPreference = scarh
+	WeaponPreference = sg552
+	WeaponPreference = aug
+	WeaponPreference = krisssuperv
+	WeaponPreference = galil
+	WeaponPreference = famas
+	WeaponPreference = fal
+	WeaponPreference = hk416c
+End
+
+Template Sniper
+	WeaponPreferenceBestCount = 4
+	WeaponPreference = awm
+	WeaponPreference = awp
+	WeaponPreference = sg550
+	WeaponPreference = g3sg1
+	WeaponPreference = galilsniper
+	WeaponPreference = trg42
+	WeaponPreference = m1garand
+	WeaponPreference = m1903a3
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = m14ebr
+End
+
+Template SniperX
+	WeaponPreference = trg42
+	WeaponPreference = m95
+End
+
+Template Power
+	WeaponPreferenceBestCount = 6
+	WeaponPreference = m60
+	WeaponPreference = m95
+	WeaponPreference = mg3
+	WeaponPreference = m249
+	WeaponPreference = scarh
+End
+
+Template Shotgun
+	WeaponPreferenceBestCount = 6
+	WeaponPreference = striker12
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = m870
+	WeaponPreference = hk416c
+	WeaponPreference = usas12
+End
+
+Template Shield
+//	WeaponPreference = shield
+	WeaponPreference = mk18			// in case shield is  disallowed
+	WeaponPreference = akm
+	WeaponPreference = sg550
+	WeaponPreference = g3sg1
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mx4
+End
+
+Template Spray
+	WeaponPreferenceBestCount = 5
+	WeaponPreference = ar57
+	WeaponPreference = krisssuperv
+	WeaponPreference = k1
+	WeaponPreference = hk416c
+	WeaponPreference = p90
+	WeaponPreference = mx4
+	WeaponPreference = mac10
+	WeaponPreference = tmp
+End
+
+// skill templates
+Template Elite
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.12
+	AttackDelay = 0.1
+	Cost = 4
+	Difficulty = ELITE
+	VoicePitch = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.001
+    BotAimRangeZ = 0.006
+End
+
+Template Expert
+	Skill = 90
+	Aggression = 90
+	ReactionTime = 0.17
+	AttackDelay = 0.1
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.001
+    BotAimRangeZ = 0.008
+End
+
+Template VeryHard
+	Skill = 85
+	Aggression = 80
+	ReactionTime = 0.23
+	AttackDelay = 0.1
+	Cost = 3
+	Difficulty = VERYHARD
+	VoicePitch = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.002
+    BotAimRangeZ = 0.010
+End
+
+Template Hard
+	Skill = 80
+	Aggression = 75
+	ReactionTime = 0.26
+	AttackDelay = 0.2
+	Cost = 3
+	Difficulty = HARD
+	VoicePitch = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.003
+    BotAimRangeZ = 0.012
+End
+
+Template Tough
+	Skill = 80
+	Aggression = 69
+	ReactionTime = 0.3
+	AttackDelay = 0.3
+	Cost = 2
+	Difficulty = TOUGH
+	VoicePitch = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.004
+    BotAimRangeZ = 0.014
+End
+
+Template Normal
+	Skill = 80
+	Aggression = 64
+	ReactionTime = 0.5
+	AttackDelay = 0.6
+	Cost = 2
+	Difficulty = NORMAL
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.005
+    BotAimRangeZ = 0.016
+End
+
+Template Fair
+	Skill = 80
+	Aggression = 61
+	ReactionTime = 0.6
+	AttackDelay = 0.7
+	Cost = 1
+	Difficulty = FAIR
+	VoicePitch = 105
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.006
+    BotAimRangeZ = 0.018
+End
+
+Template Easy
+	Skill = 80
+	Aggression = 58
+	ReactionTime = 0.8
+	AttackDelay = 1.0
+	Cost = 1
+	Difficulty = EASY
+	VoicePitch = 110
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.007
+    BotAimRangeZ = 0.020
+End
+
+// ----------------------
+// Rank Match BotProfile
+// ----------------------
+Template Elobot20
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.2
+	AttackDelay = 0.1
+	VoicePitch = 100
+	BlindTime = 0.2
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.005
+    BotAimRangeZ = 0.020
+End
+
+Template Elobot19
+	Skill = 96
+	Aggression = 100
+	ReactionTime = 0.2
+	AttackDelay = 0.1
+	VoicePitch = 100
+	BlindTime = 0.25
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.010
+    BotAimRangeZ = 0.024
+End
+
+Template Elobot18
+	Skill = 92
+	Aggression = 100
+	ReactionTime = 0.2
+	AttackDelay = 0.1
+	VoicePitch = 100
+	BlindTime = 0.3
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.015
+    BotAimRangeZ = 0.028
+End
+
+Template Elobot17
+	Skill = 88
+	Aggression = 100
+	ReactionTime = 0.3
+	AttackDelay = 0.15
+	VoicePitch = 100
+	BlindTime = 0.35
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.020
+    BotAimRangeZ = 0.032
+End
+
+Template Elobot16
+	Skill = 84
+	Aggression = 100
+	ReactionTime = 0.4
+	AttackDelay = 0.2
+	VoicePitch = 100
+	BlindTime = 0.4
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.025
+    BotAimRangeZ = 0.036
+End
+
+Template Elobot15
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.5
+	AttackDelay = 0.25
+	VoicePitch = 100
+	BlindTime = 0.45
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.030
+    BotAimRangeZ = 0.042
+End
+
+Template Elobot14
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.6
+	AttackDelay = 0.3
+	VoicePitch = 100
+	BlindTime = 0.5
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.035
+    BotAimRangeZ = 0.046
+End
+
+Template Elobot13
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.7
+	AttackDelay = 0.35
+	VoicePitch = 100
+	BlindTime = 0.55
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.040
+    BotAimRangeZ = 0.050
+End
+
+Template Elobot12
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.8
+	AttackDelay = 0.4
+	VoicePitch = 100
+	BlindTime = 0.6
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.045
+    BotAimRangeZ = 0.054
+End
+
+Template Elobot11
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.9
+	AttackDelay = 0.45
+	VoicePitch = 100
+	BlindTime = 0.65
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.058
+End
+
+Template Elobot10
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 0.7
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.062
+End
+
+Template Elobot09
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 0.8
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.066
+End
+
+Template Elobot08
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 0.9
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.070
+End
+
+Template Elobot07
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.074
+End
+
+Template Elobot06
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.055
+    BotAimRangeZ = 0.078
+End
+
+Template Elobot05
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.060
+    BotAimRangeZ = 0.084
+End
+
+Template Elobot04
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1.1
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.065
+    BotAimRangeZ = 0.088
+End
+
+Template Elobot03
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1.2
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.070
+    BotAimRangeZ = 0.092
+End
+
+Template Elobot02
+	Skill = 80
+	Aggression = 90
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1.3
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.075
+    BotAimRangeZ = 0.096
+End
+
+Template Elobot01
+	Skill = 80
+	Aggression = 80
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1.4
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.08
+    BotAimRangeZ = 0.1
+End
+
+//----------------------------------------------------------------------------
+//
+// These are the individual bot profiles, which inherit first from
+// Default and then the specified Template(s), in order
+//
+//----------------------------------------
+Elite+Rifle Miya
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+DefaX Lynn
+	Skin = 24
+	VoicePitch = 105
+End
+
+Elite+Shotgun XiaoMai
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+Punch Priscilla
+	Skin = 14
+	VoicePitch = 110
+End
+
+Elite+Defa Veronica
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+PunchT Skye
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+Rifle Maria
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+RifleT Abril
+	Skin = 14
+	VoicePitch = 100
+End
+
+Elite+SniperX Sarah
+	Skin = 17
+	VoicePitch = 105
+End
+
+Elite+RifleT Sigrid
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+PunchT Thalya
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+Spray Annie
+	Skin = 14
+	VoicePitch = 105
+End
+
+Elite+Defa Gina
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+Punch Cristina
+	Skin = 24
+	VoicePitch = 110
+End
+
+Elite+Power Eve
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+PunchT Athena
+	Skin = 14
+	VoicePitch = 100
+End
+
+Elite+Rifle Mai
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+RifleT Yasmin
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+Sniper Amy
+	Skin = 11
+	VoicePitch = 105
+End
+
+Elite+RifleT Lindsey
+	Skin = 14
+	VoicePitch = 100
+End
+
+Elite+PunchT Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+Spray Kendra
+	Skin = 24
+	VoicePitch = 105
+End
+
+Elite+Shotgun Serena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+Punch Natalia
+	Skin = 14
+	VoicePitch = 110
+End
+
+Elite+Power Shirley
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+PunchT Eve
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+Rifle Athena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+RifleT Mai
+	Skin = 14
+	VoicePitch = 100
+End
+
+Elite+Sniper Yasmin
+	Skin = 17
+	VoicePitch = 105
+End
+
+Elite+RifleT Amy
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+PunchT Lindsey
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+Rifle Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+DefaX Miya
+	Skin = 24
+	VoicePitch = 105
+End
+
+Elite+Shotgun Lynn
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+Punch XiaoMai
+	Skin = 14
+	VoicePitch = 110
+End
+
+Elite+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+PunchT Veronica
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+Rifle Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+RifleT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Elite+SniperX Abril
+	Skin = 17
+	VoicePitch = 105
+End
+
+Elite+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+PunchT Sigrid
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+Spray Thalya
+	Skin = 14
+	VoicePitch = 105
+End
+
+Elite+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+Punch Veronica
+	Skin = 24
+	VoicePitch = 110
+End
+
+Elite+Power Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+PunchT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Elite+Rifle Abril
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+Sniper Sigrid
+	Skin = 11
+	VoicePitch = 105
+End
+
+Elite+RifleT Thalya
+	Skin = 14
+	VoicePitch = 100
+End
+
+Elite+PunchT Livia
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+Spray Ingrid
+	Skin = 24
+	VoicePitch = 105
+End
+
+Elite+Shotgun Chanel
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+Punch Delilah
+	Skin = 14
+	VoicePitch = 110
+End
+
+Elite+Power Cailyn
+	Skin = 17
+	VoicePitch = 100
+End
+
+Elite+PunchT Elyse
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+Rifle Rihanna
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+RifleT Eliana
+	Skin = 14
+	VoicePitch = 100
+End
+
+Elite+Sniper Yaretzi
+	Skin = 17
+	VoicePitch = 105
+End
+
+Elite+RifleT Giovanna
+	Skin = 24
+	VoicePitch = 100
+End
+
+Elite+PunchT Shelby
+	Skin = 11
+	VoicePitch = 100
+End
+
+Elite+PunchT Caitlin
+	Skin = 11
+	VoicePitch = 100
+End
+
+//----------------------------------------
+Expert+Rifle Miya
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+DefaX Lynn
+	Skin = 24
+	VoicePitch = 105
+End
+
+Expert+Shotgun XiaoMai
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+Punch Priscilla
+	Skin = 14
+	VoicePitch = 110
+End
+
+Expert+Defa Veronica
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+PunchT Skye
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+Rifle Maria
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+RifleT Abril
+	Skin = 14
+	VoicePitch = 100
+End
+
+Expert+SniperX Sarah
+	Skin = 17
+	VoicePitch = 105
+End
+
+Expert+RifleT Sigrid
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+PunchT Thalya
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+Spray Annie
+	Skin = 14
+	VoicePitch = 105
+End
+
+Expert+Defa Gina
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+Punch Cristina
+	Skin = 24
+	VoicePitch = 110
+End
+
+Expert+Power Eve
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+PunchT Athena
+	Skin = 14
+	VoicePitch = 100
+End
+
+Expert+Rifle Mai
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+RifleT Yasmin
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+Sniper Amy
+	Skin = 11
+	VoicePitch = 105
+End
+
+Expert+RifleT Lindsey
+	Skin = 14
+	VoicePitch = 100
+End
+
+Expert+PunchT Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+Spray Kendra
+	Skin = 24
+	VoicePitch = 105
+End
+
+Expert+Shotgun Serena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+Punch Natalia
+	Skin = 14
+	VoicePitch = 110
+End
+
+Expert+Power Shirley
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+PunchT Eve
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+Rifle Athena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+RifleT Mai
+	Skin = 14
+	VoicePitch = 100
+End
+
+Expert+Sniper Yasmin
+	Skin = 17
+	VoicePitch = 105
+End
+
+Expert+RifleT Amy
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+PunchT Lindsey
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+Rifle Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+DefaX Miya
+	Skin = 24
+	VoicePitch = 105
+End
+
+Expert+Shotgun Lynn
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+Punch XiaoMai
+	Skin = 14
+	VoicePitch = 110
+End
+
+Expert+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+PunchT Veronica
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+Rifle Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+RifleT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Expert+SniperX Abril
+	Skin = 17
+	VoicePitch = 105
+End
+
+Expert+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+PunchT Sigrid
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+Spray Thalya
+	Skin = 14
+	VoicePitch = 105
+End
+
+Expert+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+Punch Veronica
+	Skin = 24
+	VoicePitch = 110
+End
+
+Expert+Power Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+PunchT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Expert+Rifle Abril
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+Sniper Sigrid
+	Skin = 11
+	VoicePitch = 105
+End
+
+Expert+RifleT Thalya
+	Skin = 14
+	VoicePitch = 100
+End
+
+Expert+PunchT Livia
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+Spray Ingrid
+	Skin = 24
+	VoicePitch = 105
+End
+
+Expert+Shotgun Chanel
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+Punch Delilah
+	Skin = 14
+	VoicePitch = 110
+End
+
+Expert+Power Cailyn
+	Skin = 17
+	VoicePitch = 100
+End
+
+Expert+PunchT Elyse
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+Rifle Rihanna
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+RifleT Eliana
+	Skin = 14
+	VoicePitch = 100
+End
+
+Expert+Sniper Yaretzi
+	Skin = 17
+	VoicePitch = 105
+End
+
+Expert+RifleT Giovanna
+	Skin = 24
+	VoicePitch = 100
+End
+
+Expert+PunchT Shelby
+	Skin = 11
+	VoicePitch = 100
+End
+
+Expert+PunchT Caitlin
+	Skin = 11
+	VoicePitch = 100
+End
+
+//----------------------------------------
+VeryHard+Rifle Miya
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+DefaX Lynn
+	Skin = 24
+	VoicePitch = 105
+End
+
+VeryHard+Shotgun XiaoMai
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+Punch Priscilla
+	Skin = 14
+	VoicePitch = 110
+End
+
+VeryHard+Defa Veronica
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Skye
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+Rifle Maria
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+RifleT Abril
+	Skin = 14
+	VoicePitch = 100
+End
+
+VeryHard+SniperX Sarah
+	Skin = 17
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Sigrid
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Thalya
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+Spray Annie
+	Skin = 14
+	VoicePitch = 105
+End
+
+VeryHard+Defa Gina
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+Punch Cristina
+	Skin = 24
+	VoicePitch = 110
+End
+
+VeryHard+Power Eve
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Athena
+	Skin = 14
+	VoicePitch = 100
+End
+
+VeryHard+Rifle Mai
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+RifleT Yasmin
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+Sniper Amy
+	Skin = 11
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Lindsey
+	Skin = 14
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+Spray Kendra
+	Skin = 24
+	VoicePitch = 105
+End
+
+VeryHard+Shotgun Serena
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+Punch Natalia
+	Skin = 14
+	VoicePitch = 110
+End
+
+VeryHard+Power Shirley
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Eve
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+Rifle Athena
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+RifleT Mai
+	Skin = 14
+	VoicePitch = 100
+End
+
+VeryHard+Sniper Yasmin
+	Skin = 17
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Amy
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Lindsey
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+Rifle Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+DefaX Miya
+	Skin = 24
+	VoicePitch = 105
+End
+
+VeryHard+Shotgun Lynn
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+Punch XiaoMai
+	Skin = 14
+	VoicePitch = 110
+End
+
+VeryHard+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Veronica
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+Rifle Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+RifleT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+VeryHard+SniperX Abril
+	Skin = 17
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Sigrid
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+Spray Thalya
+	Skin = 14
+	VoicePitch = 105
+End
+
+VeryHard+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+Punch Veronica
+	Skin = 24
+	VoicePitch = 110
+End
+
+VeryHard+Power Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+VeryHard+Rifle Abril
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+Sniper Sigrid
+	Skin = 11
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Thalya
+	Skin = 14
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Livia
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+Spray Ingrid
+	Skin = 24
+	VoicePitch = 105
+End
+
+VeryHard+Shotgun Chanel
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+Punch Delilah
+	Skin = 14
+	VoicePitch = 110
+End
+
+VeryHard+Power Cailyn
+	Skin = 17
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Elyse
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+Rifle Rihanna
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+RifleT Eliana
+	Skin = 14
+	VoicePitch = 100
+End
+
+VeryHard+Sniper Yaretzi
+	Skin = 17
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Giovanna
+	Skin = 24
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Shelby
+	Skin = 11
+	VoicePitch = 100
+End
+
+VeryHard+PunchT Caitlin
+	Skin = 11
+	VoicePitch = 100
+End
+
+//----------------------------------------
+Hard+Rifle Miya
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+DefaX Lynn
+	Skin = 24
+	VoicePitch = 105
+End
+
+Hard+Shotgun XiaoMai
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+Punch Priscilla
+	Skin = 14
+	VoicePitch = 110
+End
+
+Hard+Defa Veronica
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+PunchT Skye
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+Rifle Maria
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+RifleT Abril
+	Skin = 14
+	VoicePitch = 100
+End
+
+Hard+SniperX Sarah
+	Skin = 17
+	VoicePitch = 105
+End
+
+Hard+RifleT Sigrid
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+PunchT Thalya
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+Spray Annie
+	Skin = 14
+	VoicePitch = 105
+End
+
+Hard+Defa Gina
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+Punch Cristina
+	Skin = 24
+	VoicePitch = 110
+End
+
+Hard+Power Eve
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+PunchT Athena
+	Skin = 14
+	VoicePitch = 100
+End
+
+Hard+Rifle Mai
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+RifleT Yasmin
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+Sniper Amy
+	Skin = 11
+	VoicePitch = 105
+End
+
+Hard+RifleT Lindsey
+	Skin = 14
+	VoicePitch = 100
+End
+
+Hard+PunchT Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+Spray Kendra
+	Skin = 24
+	VoicePitch = 105
+End
+
+Hard+Shotgun Serena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+Punch Natalia
+	Skin = 14
+	VoicePitch = 110
+End
+
+Hard+Power Shirley
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+PunchT Eve
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+Rifle Athena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+RifleT Mai
+	Skin = 14
+	VoicePitch = 100
+End
+
+Hard+Sniper Yasmin
+	Skin = 17
+	VoicePitch = 105
+End
+
+Hard+RifleT Amy
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+PunchT Lindsey
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+Rifle Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+DefaX Miya
+	Skin = 24
+	VoicePitch = 105
+End
+
+Hard+Shotgun Lynn
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+Punch XiaoMai
+	Skin = 14
+	VoicePitch = 110
+End
+
+Hard+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+PunchT Veronica
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+Rifle Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+RifleT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Hard+SniperX Abril
+	Skin = 17
+	VoicePitch = 105
+End
+
+Hard+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+PunchT Sigrid
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+Spray Thalya
+	Skin = 14
+	VoicePitch = 105
+End
+
+Hard+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+Punch Veronica
+	Skin = 24
+	VoicePitch = 110
+End
+
+Hard+Power Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+PunchT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Hard+Rifle Abril
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+Sniper Sigrid
+	Skin = 11
+	VoicePitch = 105
+End
+
+Hard+RifleT Thalya
+	Skin = 14
+	VoicePitch = 100
+End
+
+Hard+PunchT Livia
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+Spray Ingrid
+	Skin = 24
+	VoicePitch = 105
+End
+
+Hard+Shotgun Chanel
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+Punch Delilah
+	Skin = 14
+	VoicePitch = 110
+End
+
+Hard+Power Cailyn
+	Skin = 17
+	VoicePitch = 100
+End
+
+Hard+PunchT Elyse
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+Rifle Rihanna
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+RifleT Eliana
+	Skin = 14
+	VoicePitch = 100
+End
+
+Hard+Sniper Yaretzi
+	Skin = 17
+	VoicePitch = 105
+End
+
+Hard+RifleT Giovanna
+	Skin = 24
+	VoicePitch = 100
+End
+
+Hard+PunchT Shelby
+	Skin = 11
+	VoicePitch = 100
+End
+
+Hard+PunchT Caitlin
+	Skin = 11
+	VoicePitch = 100
+End
+
+//----------------------------------------
+Tough+Rifle Miya
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+DefaX Lynn
+	Skin = 24
+	VoicePitch = 105
+End
+
+Tough+Shotgun XiaoMai
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+Punch Priscilla
+	Skin = 14
+	VoicePitch = 110
+End
+
+Tough+Defa Veronica
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+PunchT Skye
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+Rifle Maria
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+RifleT Abril
+	Skin = 14
+	VoicePitch = 100
+End
+
+Tough+SniperX Sarah
+	Skin = 17
+	VoicePitch = 105
+End
+
+Tough+RifleT Sigrid
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+PunchT Thalya
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+Spray Annie
+	Skin = 14
+	VoicePitch = 105
+End
+
+Tough+Defa Gina
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+Punch Cristina
+	Skin = 24
+	VoicePitch = 110
+End
+
+Tough+Power Eve
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+PunchT Athena
+	Skin = 14
+	VoicePitch = 100
+End
+
+Tough+Rifle Mai
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+RifleT Yasmin
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+Sniper Amy
+	Skin = 11
+	VoicePitch = 105
+End
+
+Tough+RifleT Lindsey
+	Skin = 14
+	VoicePitch = 100
+End
+
+Tough+PunchT Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+Spray Kendra
+	Skin = 24
+	VoicePitch = 105
+End
+
+Tough+Shotgun Serena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+Punch Natalia
+	Skin = 14
+	VoicePitch = 110
+End
+
+Tough+Power Shirley
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+PunchT Eve
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+Rifle Athena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+RifleT Mai
+	Skin = 14
+	VoicePitch = 100
+End
+
+Tough+Sniper Yasmin
+	Skin = 17
+	VoicePitch = 105
+End
+
+Tough+RifleT Amy
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+PunchT Lindsey
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+Rifle Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+DefaX Miya
+	Skin = 24
+	VoicePitch = 105
+End
+
+Tough+Shotgun Lynn
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+Punch XiaoMai
+	Skin = 14
+	VoicePitch = 110
+End
+
+Tough+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+PunchT Veronica
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+Rifle Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+RifleT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Tough+SniperX Abril
+	Skin = 17
+	VoicePitch = 105
+End
+
+Tough+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+PunchT Sigrid
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+Spray Thalya
+	Skin = 14
+	VoicePitch = 105
+End
+
+Tough+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+Punch Veronica
+	Skin = 24
+	VoicePitch = 110
+End
+
+Tough+Power Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+PunchT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Tough+Rifle Abril
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+Sniper Sigrid
+	Skin = 11
+	VoicePitch = 105
+End
+
+Tough+RifleT Thalya
+	Skin = 14
+	VoicePitch = 100
+End
+
+Tough+PunchT Livia
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+Spray Ingrid
+	Skin = 24
+	VoicePitch = 105
+End
+
+Tough+Shotgun Chanel
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+Punch Delilah
+	Skin = 14
+	VoicePitch = 110
+End
+
+Tough+Power Cailyn
+	Skin = 17
+	VoicePitch = 100
+End
+
+Tough+PunchT Elyse
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+Rifle Rihanna
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+RifleT Eliana
+	Skin = 14
+	VoicePitch = 100
+End
+
+Tough+Sniper Yaretzi
+	Skin = 17
+	VoicePitch = 105
+End
+
+Tough+RifleT Giovanna
+	Skin = 24
+	VoicePitch = 100
+End
+
+Tough+PunchT Shelby
+	Skin = 11
+	VoicePitch = 100
+End
+
+Tough+PunchT Caitlin
+	Skin = 11
+	VoicePitch = 100
+End
+
+//----------------------------------------
+Normal+Rifle Miya
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+DefaX Lynn
+	Skin = 24
+	VoicePitch = 105
+End
+
+Normal+Shotgun XiaoMai
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+Punch Priscilla
+	Skin = 14
+	VoicePitch = 110
+End
+
+Normal+Defa Veronica
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+PunchT Skye
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+Rifle Maria
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+RifleT Abril
+	Skin = 14
+	VoicePitch = 100
+End
+
+Normal+SniperX Sarah
+	Skin = 17
+	VoicePitch = 105
+End
+
+Normal+RifleT Sigrid
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+PunchT Thalya
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+Spray Annie
+	Skin = 14
+	VoicePitch = 105
+End
+
+Normal+Defa Gina
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+Punch Cristina
+	Skin = 24
+	VoicePitch = 110
+End
+
+Normal+Power Eve
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+PunchT Athena
+	Skin = 14
+	VoicePitch = 100
+End
+
+Normal+Rifle Mai
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+RifleT Yasmin
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+Sniper Amy
+	Skin = 11
+	VoicePitch = 105
+End
+
+Normal+RifleT Lindsey
+	Skin = 14
+	VoicePitch = 100
+End
+
+Normal+PunchT Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+Spray Kendra
+	Skin = 24
+	VoicePitch = 105
+End
+
+Normal+Shotgun Serena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+Punch Natalia
+	Skin = 14
+	VoicePitch = 110
+End
+
+Normal+Power Shirley
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+PunchT Eve
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+Rifle Athena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+RifleT Mai
+	Skin = 14
+	VoicePitch = 100
+End
+
+Normal+Sniper Yasmin
+	Skin = 17
+	VoicePitch = 105
+End
+
+Normal+RifleT Amy
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+PunchT Lindsey
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+Rifle Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+DefaX Miya
+	Skin = 24
+	VoicePitch = 105
+End
+
+Normal+Shotgun Lynn
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+Punch XiaoMai
+	Skin = 14
+	VoicePitch = 110
+End
+
+Normal+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+PunchT Veronica
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+Rifle Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+RifleT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Normal+SniperX Abril
+	Skin = 17
+	VoicePitch = 105
+End
+
+Normal+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+PunchT Sigrid
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+Spray Thalya
+	Skin = 14
+	VoicePitch = 105
+End
+
+Normal+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+Punch Veronica
+	Skin = 24
+	VoicePitch = 110
+End
+
+Normal+Power Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+PunchT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Normal+Rifle Abril
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+Sniper Sigrid
+	Skin = 11
+	VoicePitch = 105
+End
+
+Normal+RifleT Thalya
+	Skin = 14
+	VoicePitch = 100
+End
+
+Normal+PunchT Livia
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+Spray Ingrid
+	Skin = 24
+	VoicePitch = 105
+End
+
+Normal+Shotgun Chanel
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+Punch Delilah
+	Skin = 14
+	VoicePitch = 110
+End
+
+Normal+Power Cailyn
+	Skin = 17
+	VoicePitch = 100
+End
+
+Normal+PunchT Elyse
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+Rifle Rihanna
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+RifleT Eliana
+	Skin = 14
+	VoicePitch = 100
+End
+
+Normal+Sniper Yaretzi
+	Skin = 17
+	VoicePitch = 105
+End
+
+Normal+RifleT Giovanna
+	Skin = 24
+	VoicePitch = 100
+End
+
+Normal+PunchT Shelby
+	Skin = 11
+	VoicePitch = 100
+End
+
+Normal+PunchT Caitlin
+	Skin = 11
+	VoicePitch = 100
+End
+
+//----------------------------------------
+Fair+Rifle Miya
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+DefaX Lynn
+	Skin = 24
+	VoicePitch = 105
+End
+
+Fair+Shotgun XiaoMai
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+Punch Priscilla
+	Skin = 14
+	VoicePitch = 110
+End
+
+Fair+Defa Veronica
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+PunchT Skye
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+Rifle Maria
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+RifleT Abril
+	Skin = 14
+	VoicePitch = 100
+End
+
+Fair+SniperX Sarah
+	Skin = 17
+	VoicePitch = 105
+End
+
+Fair+RifleT Sigrid
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+PunchT Thalya
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+Spray Annie
+	Skin = 14
+	VoicePitch = 105
+End
+
+Fair+Defa Gina
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+Punch Cristina
+	Skin = 24
+	VoicePitch = 110
+End
+
+Fair+Power Eve
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+PunchT Athena
+	Skin = 14
+	VoicePitch = 100
+End
+
+Fair+Rifle Mai
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+RifleT Yasmin
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+Sniper Amy
+	Skin = 11
+	VoicePitch = 105
+End
+
+Fair+RifleT Lindsey
+	Skin = 14
+	VoicePitch = 100
+End
+
+Fair+PunchT Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+Spray Kendra
+	Skin = 24
+	VoicePitch = 105
+End
+
+Fair+Shotgun Serena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+Punch Natalia
+	Skin = 14
+	VoicePitch = 110
+End
+
+Fair+Power Shirley
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+PunchT Eve
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+Rifle Athena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+RifleT Mai
+	Skin = 14
+	VoicePitch = 100
+End
+
+Fair+Sniper Yasmin
+	Skin = 17
+	VoicePitch = 105
+End
+
+Fair+RifleT Amy
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+PunchT Lindsey
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+Rifle Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+DefaX Miya
+	Skin = 24
+	VoicePitch = 105
+End
+
+Fair+Shotgun Lynn
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+Punch XiaoMai
+	Skin = 14
+	VoicePitch = 110
+End
+
+Fair+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+PunchT Veronica
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+Rifle Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+RifleT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Fair+SniperX Abril
+	Skin = 17
+	VoicePitch = 105
+End
+
+Fair+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+PunchT Sigrid
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+Spray Thalya
+	Skin = 14
+	VoicePitch = 105
+End
+
+Fair+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+Punch Veronica
+	Skin = 24
+	VoicePitch = 110
+End
+
+Fair+Power Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+PunchT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Fair+Rifle Abril
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+Sniper Sigrid
+	Skin = 11
+	VoicePitch = 105
+End
+
+Fair+RifleT Thalya
+	Skin = 14
+	VoicePitch = 100
+End
+
+Fair+PunchT Livia
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+Spray Ingrid
+	Skin = 24
+	VoicePitch = 105
+End
+
+Fair+Shotgun Chanel
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+Punch Delilah
+	Skin = 14
+	VoicePitch = 110
+End
+
+Fair+Power Cailyn
+	Skin = 17
+	VoicePitch = 100
+End
+
+Fair+PunchT Elyse
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+Rifle Rihanna
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+RifleT Eliana
+	Skin = 14
+	VoicePitch = 100
+End
+
+Fair+Sniper Yaretzi
+	Skin = 17
+	VoicePitch = 105
+End
+
+Fair+RifleT Giovanna
+	Skin = 24
+	VoicePitch = 100
+End
+
+Fair+PunchT Shelby
+	Skin = 11
+	VoicePitch = 100
+End
+
+Fair+PunchT Caitlin
+	Skin = 11
+	VoicePitch = 100
+End
+
+//----------------------------------------
+Easy+Rifle Miya
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+DefaX Lynn
+	Skin = 24
+	VoicePitch = 105
+End
+
+Easy+Shotgun XiaoMai
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+Punch Priscilla
+	Skin = 14
+	VoicePitch = 110
+End
+
+Easy+Defa Veronica
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+PunchT Skye
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+Rifle Maria
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+RifleT Abril
+	Skin = 14
+	VoicePitch = 100
+End
+
+Easy+SniperX Sarah
+	Skin = 17
+	VoicePitch = 105
+End
+
+Easy+RifleT Sigrid
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+PunchT Thalya
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+Spray Annie
+	Skin = 14
+	VoicePitch = 105
+End
+
+Easy+Defa Gina
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+Punch Cristina
+	Skin = 24
+	VoicePitch = 110
+End
+
+Easy+Power Eve
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+PunchT Athena
+	Skin = 14
+	VoicePitch = 100
+End
+
+Easy+Rifle Mai
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+RifleT Yasmin
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+Sniper Amy
+	Skin = 11
+	VoicePitch = 105
+End
+
+Easy+RifleT Lindsey
+	Skin = 14
+	VoicePitch = 100
+End
+
+Easy+PunchT Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+Spray Kendra
+	Skin = 24
+	VoicePitch = 105
+End
+
+Easy+Shotgun Serena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+Punch Natalia
+	Skin = 14
+	VoicePitch = 110
+End
+
+Easy+Power Shirley
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+PunchT Eve
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+Rifle Athena
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+RifleT Mai
+	Skin = 14
+	VoicePitch = 100
+End
+
+Easy+Sniper Yasmin
+	Skin = 17
+	VoicePitch = 105
+End
+
+Easy+RifleT Amy
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+PunchT Lindsey
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+Rifle Lucy
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+DefaX Miya
+	Skin = 24
+	VoicePitch = 105
+End
+
+Easy+Shotgun Lynn
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+Punch XiaoMai
+	Skin = 14
+	VoicePitch = 110
+End
+
+Easy+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+PunchT Veronica
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+Rifle Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+RifleT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Easy+SniperX Abril
+	Skin = 17
+	VoicePitch = 105
+End
+
+Easy+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+PunchT Sigrid
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+Spray Thalya
+	Skin = 14
+	VoicePitch = 105
+End
+
+Easy+Defa Priscilla
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+Punch Veronica
+	Skin = 24
+	VoicePitch = 110
+End
+
+Easy+Power Skye
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+PunchT Maria
+	Skin = 14
+	VoicePitch = 100
+End
+
+Easy+Rifle Abril
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+RifleT Sarah
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+Sniper Sigrid
+	Skin = 11
+	VoicePitch = 105
+End
+
+Easy+RifleT Thalya
+	Skin = 14
+	VoicePitch = 100
+End
+
+Easy+PunchT Livia
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+Spray Ingrid
+	Skin = 24
+	VoicePitch = 105
+End
+
+Easy+Shotgun Chanel
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+Punch Delilah
+	Skin = 14
+	VoicePitch = 110
+End
+
+Easy+Power Cailyn
+	Skin = 17
+	VoicePitch = 100
+End
+
+Easy+PunchT Elyse
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+Rifle Rihanna
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+RifleT Eliana
+	Skin = 14
+	VoicePitch = 100
+End
+
+Easy+Sniper Yaretzi
+	Skin = 17
+	VoicePitch = 105
+End
+
+Easy+RifleT Giovanna
+	Skin = 24
+	VoicePitch = 100
+End
+
+Easy+PunchT Shelby
+	Skin = 11
+	VoicePitch = 100
+End
+
+Easy+PunchT Caitlin
+	Skin = 11
+	VoicePitch = 100
+End
